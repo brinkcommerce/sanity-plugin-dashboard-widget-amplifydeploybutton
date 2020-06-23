@@ -1,7 +1,11 @@
 {
+  "paths": {
+    "source": "./src",
+    "compiled": "./lib"
+  },
   "parts": [
     {
-      "name": "part:@sanity/dashboard/widget/patant",
+      "name": "part:@sanity/dashboard/widget/amplifydeploybutton",
       "implements": "part:@sanity/dashboard/widget",
       "path": "index.js"
     }

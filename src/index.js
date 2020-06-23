@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import DefaultButton from "part:@sanity/components/buttons/default";
 
 import styles from "./AmplifyDeployButton.css";
-import { console } from "get-it/lib/util/global";
 
 class AmplifyDeployButton extends React.Component {
   static propTypes = {

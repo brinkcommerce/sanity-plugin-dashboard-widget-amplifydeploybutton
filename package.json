@@ -1,8 +1,8 @@
 {
   "name": "sanity-plugin-dashboard-widget-amplifydeploybutton",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "AWS amplify deploy button dashboard widget for Sanity Content Studio",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "git@github.com:brinkcommerce/sanity-plugin-dashboard-widget-amplifydeploybutton.git",
   "author": "Patrik Antonsson <patrik.antonsson@brinkcommerce.com>",
   "license": "MIT",
@@ -19,7 +19,23 @@
   "bugs": {
     "url": "https://https://github.com/brinkcommerce/sanity-plugin-dashboard-widget-amplifydeploybutton/issues"
   },
+  "scripts": {
+    "build": "babel src -d lib --copy-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-syntax-class-properties": "^6.13.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.3.0",
+    "eslint-config-sanity": "^2.1.4",
+    "eslint-plugin-react": "^7.1.0"
+  },
   "peerDependencies": {
-    "react": "^16"
+    "react": "^16",
+    "prop-types": "^15.6 || ^16"
   }
 }
