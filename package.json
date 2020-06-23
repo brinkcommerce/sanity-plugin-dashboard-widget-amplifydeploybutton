@@ -1,0 +1,25 @@
+{
+  "name": "sanity-plugin-dashboard-widget-amplifydeploybutton",
+  "version": "0.0.1",
+  "description": "AWS amplify deploy button dashboard widget for Sanity Content Studio",
+  "main": "index.js",
+  "repository": "git@github.com:brinkcommerce/sanity-plugin-dashboard-widget-amplifydeploybutton.git",
+  "author": "Patrik Antonsson <patrik.antonsson@brinkcommerce.com>",
+  "license": "MIT",
+  "public": true,
+  "keywords": [
+    "sanity",
+    "pluign",
+    "part",
+    "dashboard",
+    "widget",
+    "amplifydeploybutton"
+  ],
+  "homepage": "https://https://github.com/brinkcommerce/sanity-plugin-dashboard-widget-amplifydeploybutton#readme",
+  "bugs": {
+    "url": "https://https://github.com/brinkcommerce/sanity-plugin-dashboard-widget-amplifydeploybutton/issues"
+  },
+  "peerDependencies": {
+    "react": "^16"
+  }
+}
