@@ -1,6 +1,6 @@
 {
   "name": "sanity-plugin-dashboard-widget-amplifydeploybutton",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "AWS amplify deploy button dashboard widget for Sanity Content Studio",
   "main": "lib/index.js",
   "repository": "git@github.com:brinkcommerce/sanity-plugin-dashboard-widget-amplifydeploybutton.git",
