@@ -15,8 +15,8 @@ class AmplifyDeployButton extends React.Component {
     imageWidth: 600,
     title: "Deploy content changes",
     buttonText: "Deploy",
-    deployText: "Deploying. You will recive status email",
-    deployErrorText: "There was an error deploying content"
+    deployText: "Deploying. You will receive status email.",
+    deployErrorText: "There was an error deploying content."
   };
 
   state = {
@@ -34,10 +34,6 @@ class AmplifyDeployButton extends React.Component {
       console.log(error);
     });
   };
-
-  componentDidMount() {
-    console.log(this.props);
-  }
 
   render() {
     const { title, buttonText } = this.props;
