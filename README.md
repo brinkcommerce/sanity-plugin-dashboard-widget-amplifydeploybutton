@@ -9,7 +9,7 @@ sanity install @sanity/dashboard
 ```
 ### Install the plugin
 ```text
-sanity install dashboard-widget-amplify
+sanity install dashboard-widget-amplifydeploybutton
 ```
 ### Update your dashboardConfig.js. 
 Get the full webHookUrl from [amplify](https://docs.aws.amazon.com/amplify/latest/userguide/webhooks.html) ex. "https://<i></i>webhooks.amplify.eu-west-1.amazonaws.com/prod/webhooks?id=XXX&token=XXX&operation=startbuild".
