@@ -8,7 +8,7 @@ class AmplifyDeployButton extends React.Component {
   static propTypes = {
     title: PropTypes.string,
     buttonText: PropTypes.string,
-    webhookUrl: PropTypes.string,
+    webhookUrls: PropTypes.array,
   };
 
   static defaultProps = {
@@ -16,7 +16,8 @@ class AmplifyDeployButton extends React.Component {
     title: "Deploy content changes",
     buttonText: "Deploy",
     deployText: "Deploying. You will receive status email.",
-    deployErrorText: "There was an error deploying content."
+    deployErrorText: "There was an error deploying content.",
+    webhookUrls: [],
   };
 
   state = {
@@ -24,8 +25,13 @@ class AmplifyDeployButton extends React.Component {
     building: false,
   };
   postAmplifyBuild = () => {
+    console.log("ok");
     this.setState({ building: true });
-    fetch(this.props.webhookUrl, {
+    this.props.webhookUrls.forEach(url => this.postToAmplify(url))
+  };
+
+  postToAmplify = url => {
+    fetch(url, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       mode: "no-cors",
@@ -51,7 +57,9 @@ class AmplifyDeployButton extends React.Component {
             {buttonText}
           </DefaultButton>
           {this.state.building && (
-            <div style={{ color: "green" }} className={styles.footer}>{this.props.deployText}</div>
+            <div style={{ color: "green" }} className={styles.footer}>
+              {this.props.deployText}
+            </div>
           )}
           {this.state.error && (
             <div style={{ color: "red" }} className={styles.footer}>

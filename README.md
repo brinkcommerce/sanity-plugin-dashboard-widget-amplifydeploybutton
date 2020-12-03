@@ -19,8 +19,10 @@ export default {
   {
     name: "AmplifyDeployButton",
     options: {
-      webhookUrl:
-        "<WebhookUrl>",
+      webhookUrls: [
+          "<WebhookUrl1>",
+          "<WebhookUrl2>",
+        ],
       title: "Deploy content changes",
       buttonText: "Deploy",
     },
